@@ -60,54 +60,55 @@ if ($userId) {
             </div>
             <ul class="py-4">
                 <li>
-                    <a href="#" class="flex items-center px-5 py-3 text-gray-600 hover:bg-primary-50 hover:text-primary border-l-4 border-primary bg-primary-50 text-primary">
+                    <a href="dashboard.php" class="flex items-center px-5 py-3 text-gray-600 hover:bg-blue-50 hover:text-primary border-l-4 border-transparent ">
                         <i class="fas fa-th-large w-5 text-center mr-3"></i>
                         <span>Dashboard</span>
                     </a>
                 </li>
                 <li>
-                    <a href="documents.php" class="flex items-center px-5 py-3 text-gray-600 hover:bg-primary-50 hover:text-primary border-l-4 border-transparent">
+                    <a href="documents.php" class="flex items-center px-5 py-3 text-gray-600 hover:bg-blue-50 hover:text-primary border-l-4 border-primary bg-blue-50 text-primary">
                         <i class="fas fa-file-alt w-5 text-center mr-3"></i>
                         <span>Documents</span>
                     </a>
                 </li>
                 <li>
-                    <a href="#" class="flex items-center px-5 py-3 text-gray-600 hover:bg-primary-50 hover:text-primary border-l-4 border-transparent">
+                    <a href="#" class="flex items-center px-5 py-3 text-gray-600 hover:bg-blue-50 hover:text-primary border-l-4 border-transparent">
                         <i class="fas fa-share-alt w-5 text-center mr-3"></i>
                         <span>Shared</span>
                     </a>
                 </li>
                 <li>
-                    <a href="#" class="flex items-center px-5 py-3 text-gray-600 hover:bg-primary-50 hover:text-primary border-l-4 border-transparent">
+                    <a href="#" class="flex items-center px-5 py-3 text-gray-600 hover:bg-blue-50 hover:text-primary border-l-4 border-transparent">
                         <i class="fas fa-star w-5 text-center mr-3"></i>
                         <span>Favorites</span>
                     </a>
                 </li>
                 <li>
-                    <a href="#" class="flex items-center px-5 py-3 text-gray-600 hover:bg-primary-50 hover:text-primary border-l-4 border-transparent">
+                    <a href="#" class="flex items-center px-5 py-3 text-gray-600 hover:bg-blue-50 hover:text-primary border-l-4 border-transparent">
                         <i class="fas fa-chart-line w-5 text-center mr-3"></i>
                         <span>Analytics</span>
                     </a>
                 </li>
                 <li>
-                    <a href="#" class="flex items-center px-5 py-3 text-gray-600 hover:bg-primary-50 hover:text-primary border-l-4 border-transparent">
+                    <a href="#" class="flex items-center px-5 py-3 text-gray-600 hover:bg-blue-50 hover:text-primary border-l-4 border-transparent">
                         <i class="fas fa-trash w-5 text-center mr-3"></i>
                         <span>Trash</span>
                     </a>
                 </li>
                 <li>
-                    <a href="#" class="flex items-center px-5 py-3 text-gray-600 hover:bg-primary-50 hover:text-primary border-l-4 border-transparent">
+                    <a href="#" class="flex items-center px-5 py-3 text-gray-600 hover:bg-blue-50 hover:text-primary border-l-4 border-transparent">
                         <i class="fas fa-cog w-5 text-center mr-3"></i>
                         <span>Settings</span>
                     </a>
                 </li>
             </ul>
         </section>
-        
-        <!-- Main Content -->
+
+       
+          <!-- Main Content -->
         <div class="ml-64 flex-1 p-6">
             <div class="flex justify-between items-center mb-8">
-                <h2 class="text-2xl font-bold text-gray-800">Dashboard</h2>
+                <h2 class="text-2xl font-bold text-gray-800">Documents</h2>
                 <div class="flex items-center">
                     <div class="relative mr-4">
                         <i class="fas fa-search absolute left-3 top-3 text-gray-400"></i>
@@ -117,7 +118,7 @@ if ($userId) {
                         <i class="fas fa-bell text-gray-600"></i>
                         <span class="absolute -top-1 -right-1 bg-danger text-white text-xs rounded-full w-4 h-4 flex items-center justify-center">3</span>
                     </div>
-                    <div class="flex items-center cursor-pointer border border-gray-200 rounded-lg p-2 "  data-bs-toggle="modal" data-bs-target="#profileModal">
+                      <div class="flex items-center cursor-pointer border border-gray-200 rounded-lg p-2 "  data-bs-toggle="modal" data-bs-target="#profileModal">
                           <!-- Button trigger modal -->
 
                         
@@ -130,43 +131,9 @@ if ($userId) {
                 </div>
             </div>
             
-            <!-- Stats Cards -->
-            <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
-                <div class="bg-white rounded-xl p-6 shadow-sm hover:-translate-y-1 transition-transform duration-300 cursor-pointer">
-                    <div class="w-12 h-12 rounded-lg bg-primary-100 flex items-center justify-center text-primary mb-4">
-                        <i class="fas fa-file-alt text-xl"></i>
-                    </div>
-                    <div class="text-sm text-gray-500 mb-1 ">
-                <a href="documents.php">  Total Documents</a>        
-                  
-                
-                </div>
-                    <div class="text-2xl font-bold">142</div>
-                </div>
-                <div class="bg-white rounded-xl p-6 shadow-sm hover:-translate-y-1 transition-transform duration-300">
-                    <div class="w-12 h-12 rounded-lg bg-purple-100 flex items-center justify-center text-secondary mb-4">
-                        <i class="fas fa-share-alt text-xl"></i>
-                    </div>
-                    <div class="text-sm text-gray-500 mb-1">Shared Documents</div>
-                    <div class="text-2xl font-bold">38</div>
-                </div>
-                <div class="bg-white rounded-xl p-6 shadow-sm hover:-translate-y-1 transition-transform duration-300">
-                    <div class="w-12 h-12 rounded-lg bg-primary-100 flex items-center justify-center text-success mb-4">
-                        <i class="fas fa-eye text-xl"></i>
-                    </div>
-                    <div class="text-sm text-gray-500 mb-1">Views This Month</div>
-                    <div class="text-2xl font-bold">1,247</div>
-                </div>
-                <div class="bg-white rounded-xl p-6 shadow-sm hover:-translate-y-1 transition-transform duration-300">
-                    <div class="w-12 h-12 rounded-lg bg-yellow-100 flex items-center justify-center text-warning mb-4">
-                        <i class="fas fa-download text-xl"></i>
-                    </div>
-                    <div class="text-sm text-gray-500 mb-1">Downloads</div>
-                    <div class="text-2xl font-bold">92</div>
-                </div>
-            </section>
+           
 
-             <!--- Recent docs-->
+            <!--- Recent docs-->
             <section class="bg-white rounded-xl shadow-md p-6 mb-8">
   <div class="flex justify-between items-center mb-5">
     <h3 class="text-lg font-semibold text-gray-800">Recent Documents</h3>
@@ -231,32 +198,7 @@ if ($userId) {
 </section>
 
 </div>
-            
-
-<!-- modal user profile--->
-  <section class="modal fade" id="profileModal" tabindex="-1" aria-labelledby="profileModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h1 class="modal-title fs-5" id="profileModalLabel">User Profile</h1>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <?php if ($userData): ?>
-          <h5 class="font-weight-bold"><?php echo htmlspecialchars($userData['name']); ?></h5>
-          <p class="text-muted"><?php echo htmlspecialchars($userData['email']); ?></p>
-        <?php else: ?>
-          <p>User not found.</p>
-        <?php endif; ?>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-         <a href="logout.php" class="btn btn-primary">Logout</a>
-      </div>
-    </div>
-  </div>
-</section>
-            
+    
   
 
 <!-- Bootstrap JS and Popper.js -->

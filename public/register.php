@@ -271,7 +271,7 @@ Authenticate::checkAuth(); // This will redirect to login if not authenticated
       .then(response => response.json())
       .then(data => {
         if (data.token) {
-  localStorage.setItem('auth_token', data.token); // Store the token
+
   showToast('Registration successful!', 'success');
 
 
